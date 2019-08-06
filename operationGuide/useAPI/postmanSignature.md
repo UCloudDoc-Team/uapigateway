@@ -1,4 +1,6 @@
-#使用POSTMAN签名
+{{indexmenu_n>5}}
+
+# 使用POSTMAN签名
 
 POSTMAN常用调试后端HTTP服务，我们可以使用POST的Pre-request Script功能构建HTTP header 完成签名。
 
@@ -12,7 +14,8 @@ POSTMAN常用调试后端HTTP服务，我们可以使用POST的Pre-request Scrip
 
 代码如下：
 
-`var stage = "user_prd_stage";
+```js 
+var stage = "user_prd_stage";
 var appKey = "76976226127534999";
 var appSecret = "d1bb0aead0fd4f36b7e58eb55de46543";
 var timeStamp = Math.ceil(Date.now() / 1000)
@@ -21,4 +24,4 @@ var signature = CryptoJS.HmacSHA256(signedString , appSecret).toString(CryptoJS.
 postman.setGlobalVariable("timeStamp" , timeStamp);
 postman.setGlobalVariable("X-Gw-SignedString",signedString);
 postman.setGlobalVariable("X-Gw-Signature",signature);
-`
+```
