@@ -11,7 +11,7 @@ API分组是控制管理API的基本管理单元，需先创建API分组，然�
 
 在UAPI Gateway产品中切换至“开放API”，点击“创建API分组”，输入API分组名称及API分组描述。点击“确定”。
 
-![创建API分组](/images/openAPI/createAPIGroup.png)
+![创建API分组](/images/open_api/create_api_group.png)
 
 
 

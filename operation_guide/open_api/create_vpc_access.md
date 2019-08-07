@@ -6,5 +6,5 @@ VPC是用户专有网络，如何创建VPC请参考[如何创建VPC授权]((http
 
 在VPC授权菜单页面，点击“创建VPC授权”，输入“授权名称”，“授权描述”，选择你需要授权的VPC实例，再选择ULB / UHOST实例，输入转发的端口。
 
-![创建VPC授权](/images/openAPI/createVPCAccess.png)
+![创建VPC授权](/images/open_api/create_vpc_access.png)
 

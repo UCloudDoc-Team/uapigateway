@@ -13,6 +13,6 @@ UAPI Gateway会为每个创建的API分组单独分配一个二级域名，您�
 
 操作步骤：进入API分组详情，在右侧的自定义域名中栏中点击“绑定域名”，输入“自定义域名”，“SSL证书”，”密钥”。点击“确定”  
 
-![自定义域名](/images/openAPI/customDomain.png)
+![自定义域名](/images/open_api/custom_domain.png)
 
 
