@@ -13,6 +13,8 @@
         * [创建环境](middleware/uapigateway/operation_guide/open_api/create_env)
         * [版本管理](middleware/uapigateway/operation_guide/open_api/env_management)
         * [发布API](middleware/uapigateway/operation_guide/open_api/publish_api)
+        * [策略管理](middleware/uapigateway/operation_guide/open_api/strategy.md)
+        * [跨域访问](middleware/uapigateway/operation_guide/open_api/cors.md)
     * 调用API
         * [概述](middleware/uapigateway/operation_guide/use_api/intro)
         * [创建应用](middleware/uapigateway/operation_guide/use_api/create_app)
