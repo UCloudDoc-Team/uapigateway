@@ -2,11 +2,9 @@
 
 # 概述
 
-API网关通过APP鉴权的方式校验调用者的合法性，该方式通过API对APP的授权实现，用户通过API网关调用API必须满足以下条件
+APP鉴权是为了保证API调用的安全性，调用API。借助APP鉴权，可以简单，快速，低成本地实现系统的集成，业务能力的开放和业务能力的变现。
+APP鉴权调用需满足以下规则：
 
-*  拥有API授权的APP KEY , APP SECRET
+*  拥有API授权的APP KEY,APP SECRET
 *  实现APP鉴权算法
 *  明确API的入参规则
-
-
-
