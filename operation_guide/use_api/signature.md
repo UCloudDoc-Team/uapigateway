@@ -4,7 +4,7 @@
 访问API的签名算法需要添加的Header：  
 ``` 
     X-Gw-Signature-Method : hmac-sha256   //必填，制定加密算法，现只支持hmac-sha256
-    X-Gw-Signature-Headers : X-Gw-Timestamp, X-Gw-App-key //制定签名所需要的请求头 
+    X-Gw-Signature-Headers : X-Gw-Timestamp,X-Gw-App-Key //制定签名所需要的请求头 
     X-Gw-App-Key : APP KEY  // APP KEY
     X-Gw-Timestamp: 时间戳   // 时间戳
     X-Gw-Signature：签名     // 使用APP SECRET的签名字符串
