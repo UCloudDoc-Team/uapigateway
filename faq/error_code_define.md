@@ -1,8 +1,9 @@
 
 
 # UAPIGateway错误码定义
+
 | 错误消息 | HTTP状态码 | 语义 | 
-| ------ | ---------|
+| ------ | --------- | --- |
 | API not found error | 400 | API 不存在或未发布到制定环境 |
 | Parameter error in API request | 400 | 请求入参错误 |
 | API authentication error | 400 | API 鉴权错误 |
