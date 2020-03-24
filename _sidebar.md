@@ -1,4 +1,5 @@
-* API网关 UAPIGateway
+<div class="sidebar_title icon__ipsecvpn"> VPN网关 IPSec VPN</div>
+
     * [概览](/uapigateway/README)
     * 产品简介
         * [产品概述](/uapigateway/intro/intro_index)
