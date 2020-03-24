@@ -1,4 +1,4 @@
-<div class="sidebar_title icon__ipsecvpn"> VPN网关 IPSec VPN</div>
+<div class="sidebar_title icon__ipsecvpn">API网关 UAPIGateway</div>
 
 * [概览](/uapigateway/README)
 * 产品简介
