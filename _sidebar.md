@@ -15,22 +15,17 @@
       * [版本管理](/uapigateway/operation_guide/open_api/env_management)
       * [发布API](/uapigateway/operation_guide/open_api/publish_api)
       * [策略管理](/uapigateway/operation_guide/open_api/strategy.md)
-      * [跨域访问](/uapigateway/operation_guide/open_api/cors.md)
-        
+      * [跨域访问](/uapigateway/operation_guide/open_api/cors.md)     
    * 调用API
-    
       * [概述](/uapigateway/operation_guide/use_api/intro)
       * [创建应用](/uapigateway/operation_guide/use_api/create_app)
       * [授权应用](/uapigateway/operation_guide/use_api/grant_app_access)
       * [加密签名](/uapigateway/operation_guide/use_api/signature)
       * [使用POSTMAN签名](/uapigateway/operation_guide/use_api/postman_signature)
-      * [使用限制](/uapigateway/operation_guide/use_api/use_limit)
-        
+      * [使用限制](/uapigateway/operation_guide/use_api/use_limit)     
    * 限制策略
-    
       * [流量限制](/uapigateway/operation_guide/restriction_strategy/traffic_restriction)
-      * [授权额度限制](/uapigateway/operation_guide/restriction_strategy/authorization_restriction)
-        
+      * [授权额度限制](/uapigateway/operation_guide/restriction_strategy/authorization_restriction)    
 * 常见问题
    * [SSL Certificate error](/uapigateway/faq/ssl_certificate_error)
    * [API not found error](/uapigateway/faq/api_not_found_error)
@@ -41,19 +36,3 @@
    * [如何获取错误信息](/uapigateway/faq/get_error_message)
    * [UAPIGateway错误码定义](/uapigateway/faq/error_code_define)
    * [HTTP 参数大小限制报错](/uapigateway/faq/parameter_size_error)
-    
-    
-
-
-
-
-
-
-
-
-
-    
-   
-   
-    
-        
