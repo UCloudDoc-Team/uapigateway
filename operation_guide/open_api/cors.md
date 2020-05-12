@@ -10,26 +10,27 @@ API遵循同源策略，这意味着使用这些API的Web应用程序只能从�
 ## 简单请求与非简单请求
 对于跨域HTTP请求，浏览器会根据发送API的结构内，来判断请求是否是一个简单跨域请求。一个非简单跨域请求会在请求前发送一个Method为OPTIONS
 的请求进行预检(pre-flight)。包含以下条件的请求可视为简单请求：
- * 使用下列方法之一：
-   * GET
-   * HEAD
-   * POST
- * 只能包含以下HTTP头
-   * Accept
-   * Accept-Language
-   * Content-Language
-   * Content-Type （需要注意额外的限制）
-   * DPR
-   * Downlink
-   * Save-Data
-   * Viewport-Width
-   * Width 
- * Content-Type 的值仅限于下列三者之一：
-   * text/plain
-   * multipart/form-data
-   * application/x-www-form-urlencoded  
- * 请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器；XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。
- * 请求中没有使用 ReadableStream 对象。
+
+* 使用下列方法之一：
+    * GET
+    * HEAD
+    * POST
+* 只能包含以下HTTP头
+    * Accept
+    * Accept-Language
+    * Content-Language
+    * Content-Type （需要注意额外的限制）
+    * DPR
+    * Downlink
+    * Save-Data
+    * Viewport-Width
+    * Width 
+* Content-Type 的值仅限于下列三者之一：
+    * text/plain
+    * multipart/form-data
+    * application/x-www-form-urlencoded  
+* 请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器；XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。
+* 请求中没有使用 ReadableStream 对象。
  
  
  ## UAPIGateway对于CORS的支持
