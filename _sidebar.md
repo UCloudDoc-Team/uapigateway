@@ -1,4 +1,3 @@
-<div class="sidebar_title">API网关 UAPIGateway</div>
 
 * [概览](/uapigateway/README)
 * 产品简介
