@@ -90,7 +90,7 @@
         <summary>postman</summary>
 
     ```js
-        var stage = "user_prd_stage";  //授权的API所在的环境，默认是 RELEASE 
+        var stage = "RELEASE";  //授权的API所在的环境，默认是 RELEASE 
         var appKey = "xxxxxxxxx"; //被目标API授权过的 APP 的 appKey
         var appSecret = "xxxxxxxxxxxxx"; //被目标 API 授权过的 APP 的 appSrecet
         var timeStamp = Math.ceil(Date.now() / 1000)
@@ -99,6 +99,7 @@
         postman.setGlobalVariable("timeStamp" , timeStamp);
         postman.setGlobalVariable("X-Gw-SignedString",signedString);
         postman.setGlobalVariable("X-Gw-Signature",signature);
+        postman.setGlobalVariable("X-Gw-Stage", stage);
     ```
     </details>
 
@@ -127,15 +128,15 @@
             url : url,
             headers : {
                 "X-Gw-Signature-Method"  : "hmac-sha256",
-                "X-Gw-Signature-Headers" : "X-Gw-Timestamp,X-Gw-App-Key",
-                "X-Gw-App-Key"           : "kkkkkkkkkkkk",
+                "X-Gw-Signature-Headers" : signHeaders,
+                "X-Gw-App-Key"           : appKey,
                 "X-Gw-Timestamp"         : timeStamp,
                 "X-Gw-Signature"         : signature,
                 "X-Gw-SignedString"      : signedString,
                 "X-Gw-Stage"             : "RELEASE"
             }
         }).then(function(response){
-            console.log(response)
+            console.log(response.data)
         })
     ```
     </details>
