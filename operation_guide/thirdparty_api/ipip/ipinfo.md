@@ -30,6 +30,7 @@
     * *查询指定IP时，“:ip" 传指定的IP*
     * *查询当前请求的IP信息时，“ip" 传定值 ”current“*
     * *客户VPC内调用时，只能调用同 region 的地址，不能跨 region 调用* 
+    * *接口返回部分字段目前只支持“中文”，需要其它语言版本请联系: 4000188113*
   
 * **请求方式：** GET
   
@@ -59,13 +60,37 @@
   
   无
 
+* **返回参数**
+    * Meta字段：
+        |字段名|字段类型|字段描述|
+        |----|----|----|
+        |code|int|错误码|
+        |error|string|错误信息|
+
+    * Data字段
+        |字段名|字段类型|字段描述|
+        |----|----|----|
+        |addr|string|所查询的 IP 地址|
+        |country_name|string|国家名称|
+        |region_name|string|省份/州|名称|
+        |city_name|string|城市名称|
+        |china_admin_code|string|中国行政区划代码|
+        |longitude|float|经度|
+        |latitude|float|纬度|
+        |timezone|string|时区ID|
+        |utc_offset|string|时区偏移|
+        |continent_code|string|大洲代码|
+        |country_code|string|国家代码二位|
+        |idd_code|string|国际电话代码|
+        |isp_domain|string|运营商域名；如：chinaunicom.com|
+
 * **请求示例**
   
     <details>
         <summary>postman</summary>
 
     ```js
-        var stage = "user_prd_stage";  //授权的API所在的环境，默认是 RELEASE 
+        var stage = "RELEASE";  //授权的API所在的环境，默认是 RELEASE 
         var appKey = "xxxxxxxxx"; //被目标API授权过的 APP 的 appKey
         var appSecret = "xxxxxxxxxxxxx"; //被目标 API 授权过的 APP 的 appSrecet
         var timeStamp = Math.ceil(Date.now() / 1000)
@@ -74,6 +99,7 @@
         postman.setGlobalVariable("timeStamp" , timeStamp);
         postman.setGlobalVariable("X-Gw-SignedString",signedString);
         postman.setGlobalVariable("X-Gw-Signature",signature);
+        postman.setGlobalVariable("X-Gw-Stage", stage);
     ```
     </details>
 
@@ -102,15 +128,15 @@
             url : url,
             headers : {
                 "X-Gw-Signature-Method"  : "hmac-sha256",
-                "X-Gw-Signature-Headers" : "X-Gw-Timestamp,X-Gw-App-Key",
-                "X-Gw-App-Key"           : "kkkkkkkkkkkk",
+                "X-Gw-Signature-Headers" : signHeaders,
+                "X-Gw-App-Key"           : appKey,
                 "X-Gw-Timestamp"         : timeStamp,
                 "X-Gw-Signature"         : signature,
                 "X-Gw-SignedString"      : signedString,
                 "X-Gw-Stage"             : "RELEASE"
             }
         }).then(function(response){
-            console.log(response)
+            console.log(response.data)
         })
     ```
     </details>
