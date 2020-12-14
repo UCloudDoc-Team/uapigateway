@@ -25,6 +25,9 @@
    * 限制策略
       * [流量限制](/uapigateway/operation_guide/restriction_strategy/traffic_restriction)
       * [授权额度限制](/uapigateway/operation_guide/restriction_strategy/authorization_restriction)    
+* API推荐
+   * IP 信息服务
+      * [通用 IP 信息服务](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo)
 * 常见问题
    * [SSL Certificate error](/uapigateway/faq/ssl_certificate_error)
    * [API not found error](/uapigateway/faq/api_not_found_error)
