@@ -30,6 +30,7 @@
     * *查询指定IP时，“:ip" 传指定的IP*
     * *查询当前请求的IP信息时，“ip" 传定值 ”current“*
     * *客户VPC内调用时，只能调用同 region 的地址，不能跨 region 调用* 
+    * *接口返回部分字段目前只支持“中文”，需要其它语言版本请联系: 4000188113*
   
 * **请求方式：** GET
   
@@ -58,6 +59,30 @@
 * **请求参数（Body）**
   
   无
+
+* **返回参数**
+    * Meta字段：
+        |字段名|字段类型|字段描述|
+        |----|----|----|
+        |code|int|错误码|
+        |error|string|错误信息|
+
+    * Data字段
+        |字段名|字段类型|字段描述|
+        |----|----|----|
+        |addr|string|所查询的 IP 地址|
+        |country_name|string|国家名称|
+        |region_name|string|省份/州|名称|
+        |city_name|string|城市名称|
+        |china_admin_code|string|中国行政区划代码|
+        |longitude|float|经度|
+        |latitude|float|纬度|
+        |timezone|string|时区ID|
+        |utc_offset|string|时区偏移|
+        |continent_code|string|大洲代码|
+        |country_code|string|国家代码二位|
+        |idd_code|string|国际电话代码|
+        |isp_domain|string|运营商域名；如：chinaunicom.com|
 
 * **请求示例**
   
