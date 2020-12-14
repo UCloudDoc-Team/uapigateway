@@ -110,19 +110,15 @@
         var axios = require("axios")
         var CryptoJS = require("crypto-js");
 
-
         var signHeaders = "X-Gw-Timestamp,X-Gw-App-Key"
         var appKey = "kkkkkkkkkkkkk" //AppKey
         var appSecret = "xxxxxxxxxx" //AppSecret
-
 
         var timeStamp = Math.ceil(Date.now() / 1000)
         var signedString = "X-Gw-Timestamp:"+timeStamp+",X-Gw-App-Key:"+appKey;
         var signature = CryptoJS.HmacSHA256(signedString , appSecret).toString(CryptoJS.enc.Base64);
 
-
         var url = "https://ip-info.ucloud365.com/v1/ipip/current"
-
         axios({
             method : "GET",
             url : url,
