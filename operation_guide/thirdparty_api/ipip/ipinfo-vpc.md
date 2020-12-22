@@ -19,7 +19,7 @@
 * 异常调用：因服务端故障导致请求出错（HTTP 状态码 >=400）时，请求不计入计费次数
    
 ## 购买操作说明
-* [购买操作说明](ipinfo-manual.md)
+* [购买操作说明](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo-manual)
   
 ## 接口调用说明
 
