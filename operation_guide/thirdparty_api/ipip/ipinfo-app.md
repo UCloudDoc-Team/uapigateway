@@ -1,4 +1,4 @@
-# IP 信息服务
+# IP 信息服务 -- APP授权调用
 ## 服务介绍
 * **简介**
     * 全球IP地址信息查询，信息字段包含：国家/地区名称、省份/州名称、城市名称、中国行政区划代码、经度、纬度、时区ID、时区偏移、大洲代码、国家代码二位、国际电话代码、所有者域名、运营商
@@ -21,23 +21,21 @@
     
 ## 接口调用说明
 
-* **调用地址：**
-  * http(s)://ip-info.ucloud365.com/v1/ipip/:ip (外网调用)
-  * http://ip-info.service.ucloudapi.com/v1/ipip/:ip (客户VPC内调用)
+* **调用方式：**
+    外网、VPC 通过AppSecret 签名鉴权使用，[签名方法](/uapigateway/operation_guide/use_api/signature)。
 
+* **调用地址：**
+  * https://ipip.apimkt.net/v1/ip/:ip 
 
    **注:** 
-    * *查询指定IP时，“:ip" 传指定的IP*
-    * *查询当前请求的IP信息时，“ip" 传定值 ”current“*
-    * *客户VPC内调用时，只能调用同 region 的地址，不能跨 region 调用* 
+    * *":ip" 是要查询的目标 IP,查询当前请求的IP时，传定值 ”current“*
+    * *VPC内使用AppSecret签名调用时，只能在“服务分布区域（购买时会显示）内”使用* 
     * *接口返回部分字段目前只支持“中文”，需要其它语言版本请联系: 4000188113*
   
 * **请求方式：** GET
   
 * **返回类型：** JSON
   
-* **API 调用：** [API 签名认证调用方法（AppKey & AppSecret）](/uapigateway/operation_guide/use_api/signature)
-
 * **请求参数（Headers）**
 
     | header 名称 | 必填 | 描述 |
@@ -109,20 +107,14 @@
     ```js
         var axios = require("axios")
         var CryptoJS = require("crypto-js");
-
-
         var signHeaders = "X-Gw-Timestamp,X-Gw-App-Key"
         var appKey = "kkkkkkkkkkkkk" //AppKey
         var appSecret = "xxxxxxxxxx" //AppSecret
-
-
         var timeStamp = Math.ceil(Date.now() / 1000)
         var signedString = "X-Gw-Timestamp:"+timeStamp+",X-Gw-App-Key:"+appKey;
         var signature = CryptoJS.HmacSHA256(signedString , appSecret).toString(CryptoJS.enc.Base64);
 
-
-        var url = "https://ip-info.ucloud365.com/v1/ipip/current"
-
+        var url = "https://ucloud.ipip.net/v1/ipip/current"
         axios({
             method : "GET",
             url : url,
@@ -144,7 +136,7 @@
     <details>
         <summary>Golang</summary>
 
-    ```golang
+    ```go
     package main
 
     import (
@@ -216,7 +208,7 @@
 
         fmt.Println(signature)
         fmt.Println(signatureString)
-        DoRequest("GET", "https://ip-info.ucloud365.com/v1/ipip/43.227.197.201", "", headers)
+        DoRequest("GET", "https://ucloud.ipip.net/v1/ipip/43.227.197.201", "", headers)
     }
 
     ```
@@ -246,6 +238,7 @@
         "utc_offset": "UTC+8"
     }
 }
+
 ```
 
 * **失败返回**
