@@ -31,7 +31,7 @@
 
 
    **注:** 
-   
+
     * *":ip" 是要查询的目标 IP,查询当前请求的 client IP 时，传定值 ”current“（VPC 内调用时，client ip 是内网 IP，无实际意义）*
     * *VPC内调用时，只能在“购买时授权过的VPC”使用* 
     * *接口返回部分字段目前只支持“中文”，需要其它语言版本请联系: 4000188113*
@@ -75,7 +75,7 @@
   curl 示例：
 
     ```
-        curl -i http://ucloud.ipip.net/ip/43.227.197.201
+        curl http://ucloud.ipip.net/ip/43.227.197.201
     ```
 
     nodejs 示例：
