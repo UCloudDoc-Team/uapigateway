@@ -54,7 +54,7 @@
         |字段名|字段类型|字段描述|
         |----|----|----|
         |addr|string|所查询的 IP 地址|
-        |country_name|string|国家名称|
+        |country_name|string|国家/地区名称|
         |region_name|string|省份/州|名称|
         |city_name|string|城市名称|
         |china_admin_code|string|中国行政区划代码|
@@ -63,7 +63,7 @@
         |timezone|string|时区ID|
         |utc_offset|string|时区偏移|
         |continent_code|string|大洲代码|
-        |country_code|string|国家代码二位|
+        |country_code|string|国家/地区代码二位|
         |idd_code|string|国际电话代码|
         |isp_domain|string|运营商域名；如：chinaunicom.com|
 
