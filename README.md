@@ -2,7 +2,7 @@
 
 
 * 产品简介
-    * [产品概述](/uapigateway/intro/intro_index)
+    * [产品概述.](/uapigateway/intro/intro_index)
     * [产品特性](/uapigateway/intro/feature)
 * [基本概念](/uapigateway/fundmental_concept)
 * 操作指南
