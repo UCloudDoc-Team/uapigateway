@@ -78,14 +78,14 @@
     nodejs 示例：
 
     ```javascript
-        var axios = require("axios")
-        var url = "http://ucloud.ipip.net/ip/43.227.197.201"
-        axios({
-            method : "GET",
-            url : url,
-        }).then(function(response){
-            console.log(response.data)
-        })
+    var axios = require("axios")
+    var url = "http://ucloud.ipip.net/ip/43.227.197.201"
+    axios({
+        method : "GET",
+        url : url,
+    }).then(function(response){
+        console.log(response.data)
+    })
     ```
 
 * **正常返回**
