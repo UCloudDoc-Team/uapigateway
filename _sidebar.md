@@ -27,7 +27,8 @@
       * [授权额度限制](/uapigateway/operation_guide/restriction_strategy/authorization_restriction)    
 * API推荐
    * IP 信息服务
-      * [ IP 信息服务](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo-vpc)
+      * [ 关于 IP 信息服务](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo)
+      * [ IP 信息服务使用文档](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo-vpc)
 * 常见问题
    * [SSL Certificate error](/uapigateway/faq/ssl_certificate_error)
    * [API not found error](/uapigateway/faq/api_not_found_error)

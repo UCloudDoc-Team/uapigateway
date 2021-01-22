@@ -5,16 +5,16 @@
     * 国内精确到“城市”， 海外部分地区精确到“国家”
 
 * **服务提供商**
-  * IPIP.NET
+  * [IPIP.NET](https://www.ipip.net)
 
 * **产品优势**
   * 专业团队支撑，数据 24 小时准实时更新
-  * 使用全球 500 个以上的自有网络监测点进行辅助测量
+  * 使用全球 600 个以上的自有网络监测点进行辅助测量
   * 与全球网络服务商进行 IP 信息方面的合作，保证数据持续准确
 
-## 计费及限制
-* 请求上限：2万次/小时 
-* 计费： 0.25元/千次， 不足1000次的按实际次数计算，精确到 0.01 元
+## 计费及使用限制
+* 请求上限：2万次/小时（单VPC）
+* 计费： 0.25元/千次，<font color=blue>每天100次免费</font> 不足1000次的按实际次数计算，精确到 0.01 元
 * 结算：后付费，每日结算，按实际用量计费
 * 异常调用：因服务端故障导致请求出错（HTTP 状态码 >=400）时，请求不计入计费次数
    
@@ -28,10 +28,7 @@
 
 * **调用地址：**
   * http://ucloud.ipip.net/ip/:ip 
-
-
-   **注:** 
-   
+  * **注:** 
     * *":ip" 是要查询的目标 IP,查询当前请求的 client IP 时，传定值 ”current“（VPC 内调用时，client ip 是内网 IP，无实际意义）*
     * *VPC内调用时，只能在“购买时授权过的VPC”使用* 
     * *接口返回部分字段目前只支持“中文”，需要其它语言版本请联系: 4000188113*
@@ -57,7 +54,7 @@
         |字段名|字段类型|字段描述|
         |----|----|----|
         |addr|string|所查询的 IP 地址|
-        |country_name|string|国家名称|
+        |country_name|string|国家/地区名称|
         |region_name|string|省份/州|名称|
         |city_name|string|城市名称|
         |china_admin_code|string|中国行政区划代码|
@@ -66,7 +63,7 @@
         |timezone|string|时区ID|
         |utc_offset|string|时区偏移|
         |continent_code|string|大洲代码|
-        |country_code|string|国家代码二位|
+        |country_code|string|国家/地区代码二位|
         |idd_code|string|国际电话代码|
         |isp_domain|string|运营商域名；如：chinaunicom.com|
 
@@ -75,7 +72,7 @@
   curl 示例：
 
     ```
-        curl -i http://ucloud.ipip.net/ip/43.227.197.201
+        curl http://ucloud.ipip.net/ip/43.227.197.201
     ```
 
     nodejs 示例：
