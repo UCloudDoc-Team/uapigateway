@@ -72,7 +72,7 @@
   curl 示例：
 
     ```
-        curl http://ucloud.ipip.net/ip/43.227.197.201
+    curl http://ucloud.ipip.net/ip/43.227.197.201
     ```
 
     nodejs 示例：
