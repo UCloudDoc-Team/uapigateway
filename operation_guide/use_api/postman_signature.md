@@ -1,8 +1,8 @@
 
 
-# 使用POSTMAN签名
+# 使用 Postman 签名
 
-POSTMAN 常用调试后端 HTTP 服务，我们可以使用 POST 的 Pre-request Script 功能构建 HTTP header 完成签名。
+Postman 是常用调试后端 HTTP 服务，我们可以使用 POST 的 Pre-request Script 功能构建 HTTP 请求头完成签名。
 
 ![设置header](/images/use_api/postman1.png)
 

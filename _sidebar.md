@@ -22,7 +22,7 @@
       * [创建应用](/uapigateway/operation_guide/use_api/create_app)
       * [授权应用](/uapigateway/operation_guide/use_api/grant_app_access)
       * [加密签名](/uapigateway/operation_guide/use_api/signature)
-      * [使用POSTMAN签名](/uapigateway/operation_guide/use_api/postman_signature)
+      * [使用 Postman 签名](/uapigateway/operation_guide/use_api/postman_signature)
       * [使用限制](/uapigateway/operation_guide/use_api/use_limit)     
    * 限制策略
       * [流量限制](/uapigateway/operation_guide/restriction_strategy/traffic_restriction)
