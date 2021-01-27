@@ -40,7 +40,6 @@
     * [API authentication error](/uapigateway/faq/api_authentication_error)
     * [Blocked for unpaied order](/uapigateway/faq/blocked_for_unpaied_order)
     * [Too many requests](/uapigateway/faq/too_many_requests)
-    * [如何获取错误信息](/uapigateway/faq/get_error_message)
     * [HTTP 参数大小限制报错](/uapigateway/faq/parameter_size_error)
     
     
