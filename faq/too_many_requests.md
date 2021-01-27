@@ -1,4 +1,4 @@
-# API 流量超过阀值
+# Too many requests API 流量超过阀值
 
 * 托管在 API 网关共享实例中的 API 具有 QPS限制。共享实例中的 QPS 按 API 分组维度划分，每个分组下所有 API QPS 上限为 1000，超过限额 API 返回 `400` 错误码。
 错误信息为 `Too many request`。API 托管方可以在 API 详情中查看请求量监控数据。

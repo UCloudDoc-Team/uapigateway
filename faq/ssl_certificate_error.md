@@ -1,4 +1,4 @@
-# SSL Certificate error
+# SSL Certificate error SSL 证书异常
 
 SSL 证书异常情况下，API 网关返回 ```495``` 状态码，HTTP 连接建立之后，如用户使用 HTTPS 协议，API 网关会先更具托管方在自定义域名中的证书配置进行校验。
 如遇到 SSL 证书校验异常，请检查以下清单：

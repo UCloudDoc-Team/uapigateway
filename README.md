@@ -5,6 +5,8 @@
     * [产品概述](/uapigateway/intro/intro_index)
     * [产品特性](/uapigateway/intro/feature)
 * [基本概念](/uapigateway/fundmental_concept)
+* 价格计算
+    * [计费详情](/uapigateway/billing/billing_price)
 * 操作指南
    * 开放API
         * [创建API分组](/uapigateway/operation_guide/open_api/create_api_group)
