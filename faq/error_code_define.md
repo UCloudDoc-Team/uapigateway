@@ -1,8 +1,8 @@
+# API 网关错误码定义
 
+发生 API 调用异常时，请根据 HTTP Code 和响应头中的 `X-Gw-Message` 找到对应错误
 
-# UAPIGateway错误码定义
-
-| 错误消息 | HTTP状态码 | 语义 | 
+| Message | HTTP Status Code | 语义 |
 | ------ | --------- | --- |
 | API not found error | 400 | API 不存在或未发布到制定环境 |
 | Parameter error in API request | 400 | 请求入参错误 |
