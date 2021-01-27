@@ -32,6 +32,7 @@
       * [ 关于 IP 信息服务](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo)
       * [ IP 信息服务使用文档](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo-vpc)
 * 常见问题
+   * [API 网关错误码定义](/uapigateway/faq/error_code_define)
    * [SSL Certificate error](/uapigateway/faq/ssl_certificate_error)
    * [API not found error](/uapigateway/faq/api_not_found_error)
    * [Parameter error in API request](/uapigateway/faq/parameter_error_in_api_request)
@@ -39,7 +40,6 @@
    * [Blocked for unpaied order](/uapigateway/faq/blocked_for_unpaied_order)
    * [Too many requests](/uapigateway/faq/too_many_requests)
    * [如何获取错误信息](/uapigateway/faq/get_error_message)
-   * [UAPIGateway错误码定义](/uapigateway/faq/error_code_define)
    * [HTTP 参数大小限制报错](/uapigateway/faq/parameter_size_error)
    
    
