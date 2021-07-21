@@ -8,10 +8,11 @@
 | Parameter error in API request | 400 | 请求入参错误 |
 | API authentication error | 400 | API 鉴权错误 |
 | Blocked for unpaied order | 400 | 有未支付账单 |
-| Too many requests | 400 | API 流量超过限定阀值 |
 | Request body is too large | 413 | 请求体体积过大 |
 | URI is too Long | 414 | URI 过长 |
+| Too many requests | 429 | API 流量超过限定阀值 |
 | Quota is not enough | 429 |  APP 授权配额不足 |
+| API exceeds ratelimit for vpc | 429 | API 流量超过 VPC 配额 |
 | Request header is too large | 494 | 请求过大 |
 | SSL certificate error | 495 | SSL 证书校验错误 |
 | Upstream service unavailable | 502 | 后端服务不可用 |

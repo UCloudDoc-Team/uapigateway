@@ -129,9 +129,10 @@
     ```
 
 * **错误码**
-    
-    |错误码	|错误信息|描述|
+    1. API 网关错误码,错误显示在`X-Gw-Error-Message` 和 `X-Gw-Error-Status` 响应字段中。如使用 curl，指定 `-i` 参数显示所有响应头信息。具体错误码及错误信息，请参考[](/uapigateway/faq/error_code_define)
+ 
+    2. JSON 错误码
+    |错误码|错误信息|描述|
     |---|---|---|
     |0|Success|成功|
-    |1001|Not globalunicast ip address|非公共IP地址|
-    |1002|Not legal ipv4 address|IP地址不合法|
+    |400|Find Ip Info Error, Query IP Format error|IP地址格式错误|

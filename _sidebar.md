@@ -27,7 +27,7 @@
    * 限制策略
       * [流量限制](/uapigateway/operation_guide/restriction_strategy/traffic_restriction)
       * [授权额度限制](/uapigateway/operation_guide/restriction_strategy/authorization_restriction)    
-* API推荐
+* API推荐(API市场)
    * IP 信息服务
       * [ 关于 IP 信息服务](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo)
       * [ IP 信息服务使用文档](/uapigateway/operation_guide/thirdparty_api/ipip/ipinfo-vpc)
