@@ -120,8 +120,8 @@
     ```json
     {
         "meta": {
-            "code": 1001,
-            "error": "Not globalunicast ip address"
+            "code": 400,
+            "error": "Find Ip Info Error, Query IP Format error."
         },
         "data": null
     }
@@ -129,10 +129,10 @@
     ```
 
 * **错误码**
-    1. API 网关错误码,错误显示在`X-Gw-Error-Message` 和 `X-Gw-Error-Status` 响应字段中。如使用 curl，指定 `-i` 参数显示所有响应头信息。具体错误码及错误信息，请参考[](/uapigateway/faq/error_code_define)
+    1. API 网关错误码,错误显示在 `X-Gw-Error-Message` 和 `X-Gw-Error-Status` 响应字段中。如使用 curl，指定 `-i` 参数显示所有响应头信息。具体错误码及错误信息，请参考[错误码](/uapigateway/faq/error_code_define)
  
     2. JSON 错误码
     |错误码|错误信息|描述|
     |---|---|---|
     |0|Success|成功|
-    |400|Find Ip Info Error, Query IP Format error|IP地址格式错误|
+    |400|Find Ip Info Error, Query IP Format error.|IP地址格式错误|
